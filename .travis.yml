@@ -4,6 +4,10 @@ jdk: openjdk8
 services:
   - docker
 script:
+  - pwd
+  - ls -lart
   - mvn test
   - mvn clean package
+  - pwd
+  - ls -lart
   - docker build -t abhi/demo-microservice:1.0 .
