@@ -7,4 +7,4 @@ script:
   - mvn test
   - mvn clean package
 defore_deploy:
-  - docker build -t abhi/demo-microservice:1.0 .\
+  - docker build -t abhi/demo-microservice:1.0 .
